@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Gustavo Silva Damasceno</h1>
+            <nav>
+                <a href="#" id="openModal">Contato</a>
+                <a href="curriculo-gustavo.pdf" class="btn-cv" download>Baixar Currículo</a>
+            </nav>
+        </header>
+        <main>
+            <section class="about">
+                <p>
+                    Olá! Meu nome é Gustavo Silva Damasceno e sou estudante de Engenharia de Software. Tenho paixão por
+                    resolver problemas através da tecnologia e estou em constante busca por aprender e aplicar boas
+                    práticas no desenvolvimento de software.
+                </p>
+                <p>
+                    Durante minha formação, venho desenvolvendo habilidades em front-end e back-end, com foco em
+                    tecnologias como Node.js, Java, Angular, e bancos de dados como MySQL. Também tenho familiaridade
+                    com ferramentas modernas de desenvolvimento como GitLab, Docker e integração de APIs RESTful.
+                </p>
+                <p>
+                    Sou uma pessoa dedicada, curiosa e gosto de transformar ideias em soluções reais. Busco
+                    oportunidades para colaborar em projetos inovadores e continuar evoluindo como desenvolvedor.
+                </p>
+            </section>
+
+            <section class="technologies">
+                <h2>Tecnologias</h2>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <h3><i class="fab fa-node-js"></i> Node.js</h3>
+                        <p>Desenvolvimento de aplicações back-end eficientes com APIs RESTful.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fab fa-java"></i> Java</h3>
+                        <p>Experiência em programação orientada a objetos e sistemas corporativos.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fab fa-angular"></i> Angular</h3>
+                        <p>Criação de interfaces dinâmicas, modulares e responsivas.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fab fa-html5"></i> HTML / CSS</h3>
+                        <p>Construção de layouts modernos, acessíveis e responsivos.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-database"></i> MySQL</h3>
+                        <p>Modelagem e consultas SQL para bancos de dados relacionais.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fas fa-plug"></i> API RESTful</h3>
+                        <p>Desenvolvimento e consumo de APIs seguindo padrões REST.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fab fa-gitlab"></i> GitLab</h3>
+                        <p>Versionamento de código, controle de branches e CI/CD.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3><i class="fab fa-docker"></i> Docker</h3>
+                        <p>Contêinerização de aplicações para ambientes consistentes e portáveis.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="projetos">
+                <h2>Projetos</h2>
+            </section>
+        </main>
+
+    </div>
+    <!-- MODAL DE CONTATO -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Entre em Contato</h2>
+            <ul class="contato-info">
+                <li><strong>Email:</strong> gustavodamacen92@gmail.com</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gustavo-silva-damasceno-b5920b221"
+                        target="_blank">linkedin.com/in/gustavo</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/tevez03"
+                        target="_blank">github.com/tevez03</a></li>
+                <li><strong>WhatsApp:</strong> (61) 99231-2388</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const modal = document.getElementById("contactModal");
+        const openBtn = document.getElementById("openModal");
+        const closeBtn = document.querySelector(".close-button");
+
+        openBtn.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        };
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+
+</html>

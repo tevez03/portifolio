@@ -1,0 +1,212 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #0f3577, #169e87 );
+  font-family: 'Segoe UI', sans-serif;
+  color: aliceblue;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 25px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a6d4fa;
+}
+
+/* Main */
+main {
+  margin-top: 60px;
+}
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.technologies {
+  margin-top: 60px;
+}
+
+.technologies h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tech-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.tech-item:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tech-item:hover h3 i {
+  transform: rotate(10deg) scale(1.2);
+  color: #ffffff;
+}
+
+.tech-item h3 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.tech-item p {
+  margin: 10px 0 0;
+  font-size: 15px;
+  color: #d0e3f0;
+}
+
+.tech-item h3 i {
+  margin-right: 8px;
+  color: #a6d4fa;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ffffff22;
+  color: aliceblue;
+  border: 1px solid #a6d4fa;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.btn-cv:hover {
+  background: #ffffff33;
+}
+
+.about {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.about p {
+  color: #dce6f3;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.projetos {
+  margin-top: 60px;
+}
+
+.projetos h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #1a2b5a;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #a6d4fa;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content a {
+  color: #a6d4fa;
+  text-decoration: none;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+}
+
+.close-button {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #a6d4fa;
+}
+
+.contato-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contato-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
